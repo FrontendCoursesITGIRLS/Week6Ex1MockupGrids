@@ -11,32 +11,90 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    margin-bottom: 30px;
+    
 }
 .table2{
-    grid-row: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
 }
 .table3{
+    grid-row: 2/3;
     display: grid; 
-    grid-template-columns: 1.75fr 1fr;
+    grid-template-columns: 2fr 1fr;
     background-color: antiquewhite;
-}
-.mainStaff{
-    display:flex;
-    justify-content: center;
-    margin-top: 30px;
 }
 .table4{
     grid-column: 1/2;
+    grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     justify-items: center;
+    gap:10px;
+    margin-bottom: 30px;
     
 }
-.else1{
+.mainStaff{
     grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.else1{
+    grid-row: 2/3;
     grid-column: 1/2;
-    background-color: yellow;
-    
+    background-color: yellow; 
+}
+.else2{
+    grid-row: 2/3;
+    grid-column: 2/2;
+    background-color: yellow; 
+}
+.else3{
+    grid-row: 3/3;
+    grid-column: 1/span 2;
+    background-color: yellow; 
+    width: 58%;
+    margin-top: 10px;
+}
+.else3Text{
+    display: flex;
+    justify-content: center;
+}
+.table5{
+    grid-column: 2/3;
+    background-color: rgb(143, 235, 204);
+    display: flex;
+    justify-content: center;
+}
+.table6{
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.footerSection1{
+    grid-column: 1/4;
+    grid-row: 1/1;
+    text-align: center;
+}
+.footerSection2{
+    grid-column: 2/4;
+    grid-row: 1/1;
+    text-align: center;
+}
+.footerSection3{
+    grid-column: 3/4;
+    grid-row: 1/1;
+    text-align: center;
+}
+.footerSection4{
+    grid-column: 4/4;
+    grid-row: 1/1;
+    text-align: center;
 }
